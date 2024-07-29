@@ -12,7 +12,7 @@ function Home(){
     useEffect(()=>{
 
         async function loadFilmes() {
-            const response = await api.get("/movie/now_playing", {
+            const response = await api.get(`movie/now_playing`, {
                 params:{
                     api_key: "5e0edf77f63b17b20c98535fa7a6e073",
                     language: "pt-BR",
